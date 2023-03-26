@@ -1,0 +1,919 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: extra-light;
+  src: url(/assets/fonts/NunitoSans-ExtraLight.ttf);
+}
+@font-face {
+  font-family: light;
+  src: url(/assets/fonts/NunitoSans-Light.ttf);
+}
+@font-face {
+  font-family: regular;
+  src: url(/assets/fonts/NunitoSans-Regular.ttf);
+}
+@font-face {
+  font-family: semibold;
+  src: url(/assets/fonts/NunitoSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: bold;
+  src: url(/assets/fonts/NunitoSans-Bold.ttf);
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+header .banner {
+  display: flex;
+  justify-content: space-between;
+  background-color: #262626;
+  padding: 1rem 1.5rem;
+  align-items: center;
+}
+header .banner .logo {
+  width: 12%;
+}
+header .banner .logo svg {
+  width: 100%;
+}
+header .banner .link a {
+  text-decoration: none;
+  color: white;
+  background-color: #82B440;
+  padding: 6px 14px;
+  border-radius: 5px;
+  font-family: regular;
+  font-size: 16px;
+  transition: 0.5s;
+}
+header .banner .link a:hover {
+  background-color: #6cac18;
+}
+header .mainheader {
+  background-color: white;
+}
+header .mainheader .all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+header .mainheader .all .logo {
+  width: 15%;
+}
+header .mainheader .all .logo img {
+  width: 100%;
+}
+header .mainheader .all nav a {
+  text-decoration: none;
+  margin-left: 2rem;
+  color: #333333;
+  font-size: 17px;
+  font-family: bold;
+  transition: 0.5s;
+}
+header .mainheader .all nav a:hover {
+  color: rgb(6, 116, 206);
+}
+header .mainheader .all #hiddenicon {
+  display: none;
+}
+
+.page1 {
+  background-image: url(https://getmasum.com/html-preview/nour/assets/img/slider/1.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 18rem 0;
+  position: relative;
+}
+.page1 .info {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 25%;
+}
+.page1 .info p {
+  font-size: 22px;
+  color: white;
+  font-family: semibold;
+}
+.page1 .info h1 {
+  font-size: 56px;
+  color: white;
+  font-family: bold;
+  width: 50%;
+  margin: 0 auto 3rem;
+}
+.page1 .info a {
+  text-decoration: none;
+  color: white;
+  background-color: #6168FF;
+  padding: 1rem 2rem;
+  font-family: bold;
+  border: 2px solid #6168FF;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.page1 .info a:hover {
+  background-color: transparent;
+  border-color: white;
+}
+.page1 #first {
+  color: white;
+  font-size: 24px;
+  padding: 14px;
+  background-color: #6168FF;
+  border-radius: 5px;
+  position: fixed;
+  top: 35%;
+  left: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+.page1 #second {
+  color: #6168FF;
+  padding: 20px;
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  top: 46%;
+  right: 2%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.page1 #second:hover {
+  background-color: #6168FF;
+  color: white;
+}
+.page1 #third {
+  color: #6168FF;
+  padding: 20px;
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  top: 58%;
+  right: 2%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.page1 #third:hover {
+  background-color: #6168FF;
+  color: white;
+}
+
+.page2 .all {
+  margin: 8rem 0 4rem;
+}
+.page2 .all .left #different {
+  color: white;
+  background-color: #6168FF;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+.page2 .all .left i {
+  color: #6168FF;
+  font-size: 36px;
+}
+.page2 .all .left h3 {
+  font-size: 20px;
+  color: #333333;
+  font-family: semibold;
+  margin-top: 14px;
+}
+.page2 .all .left p {
+  font-size: 15px;
+  color: #666666;
+  font-family: regular;
+}
+.page2 .all .right .image {
+  position: relative;
+}
+.page2 .all .right .image img {
+  width: 100%;
+  height: 300px;
+}
+.page2 .all .right .image i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 100%;
+  background-color: #6168FF;
+  font-size: 28px;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.page2 .all .right .image i:hover {
+  background-color: #090f74;
+}
+
+.page3 {
+  position: relative;
+}
+.page3 .text {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+.page3 .text h1 {
+  font-size: 70px;
+  color: silver;
+  font-family: bold;
+  opacity: 0.25;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page3 .text h2 {
+  font-size: 16px;
+  color: #6168FF;
+  font-family: bold;
+}
+.page3 .text p {
+  font-size: 24px;
+  color: #333333;
+  font-family: semibold;
+}
+.page3 .content .box {
+  border: 1px solid silver;
+  border-radius: 5px;
+  margin-bottom: 6rem;
+  cursor: pointer;
+}
+.page3 .content .box .image img {
+  width: 100%;
+  height: 280px;
+}
+.page3 .content .box .about h4 {
+  font-size: 20px;
+  color: #333333;
+  font-family: bold;
+  padding: 0 1rem;
+  margin: 1.4rem 0 0.8rem;
+  position: relative;
+}
+.page3 .content .box .about h4 span {
+  font-size: 16px;
+  font-family: semibold;
+  color: #727272;
+  position: absolute;
+  right: 5%;
+}
+.page3 .content .box .about p {
+  font-size: 15px;
+  color: #727272;
+  font-family: semibold;
+  padding: 0 1rem 0.4rem;
+}
+.page3 #direction {
+  color: white;
+  padding: 20px;
+  background-color: #6168FF;
+  border-radius: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+.page3 #left {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+}
+.page3 #right {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+}
+
+.page4 .text {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+.page4 .text h1 {
+  font-size: 70px;
+  color: silver;
+  font-family: bold;
+  opacity: 0.25;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page4 .text h2 {
+  font-size: 16px;
+  color: #6168FF;
+  font-family: bold;
+}
+.page4 .text p {
+  font-size: 24px;
+  color: #333333;
+  font-family: semibold;
+}
+.page4 .content {
+  margin-bottom: 8rem;
+}
+.page4 .content .box {
+  background-color: #F4F9FF;
+  padding: 1rem 2rem;
+  position: relative;
+}
+.page4 .content .box i {
+  color: #6168FF;
+  font-size: 28px;
+  position: absolute;
+  top: 18%;
+  left: 5%;
+}
+.page4 .content .box h4 {
+  color: #333333;
+  font-size: 22px;
+  font-family: bold;
+  padding: 0 2.4rem;
+  margin: 1rem 0;
+}
+.page4 .content .box p {
+  color: #666666;
+  font-size: 16px;
+  font-family: regular;
+  padding: 0 2.4rem;
+}
+
+.page5 .all .text {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+.page5 .all .text h1 {
+  font-size: 70px;
+  color: silver;
+  font-family: bold;
+  opacity: 0.25;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page5 .all .text h2 {
+  font-size: 16px;
+  color: #6168FF;
+  font-family: bold;
+}
+.page5 .all .text p {
+  font-size: 24px;
+  color: #333333;
+  font-family: semibold;
+}
+.page5 .all .content {
+  margin-bottom: 8rem;
+}
+.page5 .all .content .box {
+  position: relative;
+}
+.page5 .all .content .box .image {
+  position: relative;
+  overflow: hidden;
+}
+.page5 .all .content .box .image:hover .overlay {
+  opacity: 0.5;
+}
+.page5 .all .content .box .image:hover p {
+  top: 50%;
+}
+.page5 .all .content .box .image:hover i {
+  right: 5%;
+}
+.page5 .all .content .box .image p {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: white;
+  font-family: bold;
+  width: 40%;
+  transition: 0.5s;
+}
+.page5 .all .content .box .image i {
+  color: #333333;
+  font-size: 16px;
+  padding: 14px;
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  top: 75%;
+  right: -20%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.page5 .all .content .box .image i:hover {
+  background-color: #262626;
+  color: white;
+}
+.page5 .all .content .box .image img {
+  width: 100%;
+}
+.page5 .all .content .box .image .overlay {
+  background-color: #6168FF;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.page6 .all .text {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+.page6 .all .text h1 {
+  font-size: 70px;
+  color: silver;
+  font-family: bold;
+  opacity: 0.25;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page6 .all .text h2 {
+  font-size: 16px;
+  color: #6168FF;
+  font-family: bold;
+}
+.page6 .all .text p {
+  font-size: 24px;
+  color: #333333;
+  font-family: semibold;
+}
+.page6 .all .content {
+  margin-bottom: 6rem;
+}
+.page6 .all .content .box {
+  border: 1px solid silver;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.page6 .all .content .box:hover .price {
+  background-color: #090f74;
+}
+.page6 .all .content .box .price {
+  color: white;
+  background-color: #6168FF;
+  padding: 10px 20px;
+  border-radius: 20px;
+  position: absolute;
+  top: 58%;
+  right: 2%;
+  transition: 0.5s;
+}
+.page6 .all .content .box .image {
+  border-radius: 10px;
+}
+.page6 .all .content .box .image img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.page6 .all .content .box .info {
+  padding: 0 2rem;
+}
+.page6 .all .content .box .info h1 {
+  font-size: 18px;
+  color: #333333;
+  margin-top: 0.5rem;
+}
+.page6 .all .content .box .info p {
+  font-size: 15px;
+}
+.page6 .all .content .box .info p span {
+  font-family: regular;
+  color: #727272;
+  margin-right: 0.5rem;
+}
+.page6 .all .content .box .info p i {
+  color: #262626;
+}
+.page6 .all .content .box .info p #navigation {
+  margin-right: 0.3rem;
+}
+.page6 .all .content .box .info .icons {
+  margin-top: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+.page6 .all .content .box .info .icons i {
+  color: gold;
+  font-size: 14px;
+}
+
+.page7 {
+  background-image: url(https://getmasum.com/html-preview/nour/assets/img/bg/client-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #6168FF;
+  padding: 5rem 0;
+  margin-bottom: 6rem;
+}
+.page7 .all .box {
+  cursor: pointer;
+}
+.page7 .all .box img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.page8 .all .text {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+.page8 .all .text h1 {
+  font-size: 70px;
+  color: silver;
+  font-family: bold;
+  opacity: 0.25;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page8 .all .text h2 {
+  font-size: 16px;
+  color: #6168FF;
+  font-family: bold;
+}
+.page8 .all .text p {
+  font-size: 24px;
+  color: #333333;
+  font-family: semibold;
+}
+.page8 .all .content {
+  position: relative;
+}
+.page8 .all .content .direction {
+  position: absolute;
+  text-align: center;
+  bottom: 10%;
+}
+.page8 .all .content .direction i {
+  cursor: pointer;
+  font-size: 18px;
+}
+.page8 .all .content .box {
+  text-align: center;
+  background-color: #F4F9FF;
+  position: relative;
+  margin-bottom: 6rem;
+}
+.page8 .all .content .box .info p {
+  font-size: 18px;
+  color: #333333;
+  font-family: regular;
+  width: 80%;
+  margin: 0 auto 1rem;
+}
+.page8 .all .content .box .info h1 {
+  font-size: 19px;
+  color: #333333;
+  font-family: bold;
+}
+.page8 .all .content .box .info span {
+  font-size: 15px;
+  color: #333333;
+  font-family: light;
+}
+.page8 .all .content .box .info .icons {
+  padding-bottom: 2rem;
+}
+.page8 .all .content .box .info .icons i {
+  color: gold;
+  font-size: 12px;
+}
+.page8 .all .content .box #sign {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  padding: 12px;
+  border-radius: 100%;
+  background-color: #6168FF;
+  top: 28%;
+  right: 33%;
+}
+.page8 .all .content .box .image {
+  padding: 2rem 0;
+}
+.page8 .all .content .box .image img {
+  width: 35%;
+  border-radius: 100%;
+}
+
+.page9 .all .text {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+.page9 .all .text h1 {
+  font-size: 70px;
+  color: silver;
+  font-family: bold;
+  opacity: 0.25;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page9 .all .text h2 {
+  font-size: 16px;
+  color: #6168FF;
+  font-family: bold;
+}
+.page9 .all .text p {
+  font-size: 24px;
+  color: #333333;
+  font-family: semibold;
+}
+.page9 .all .content {
+  margin-bottom: 6rem;
+}
+.page9 .all .content .box {
+  border: 1px solid silver;
+  border-radius: 5px;
+}
+.page9 .all .content .box .image img {
+  width: 100%;
+}
+.page9 .all .content .box .info {
+  padding: 2rem;
+}
+.page9 .all .content .box .info span {
+  font-size: 16px;
+  color: #333333;
+  font-family: light;
+}
+.page9 .all .content .box .info h4 {
+  font-size: 24px;
+  color: #333333;
+  font-family: bold;
+  margin-top: 1rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.page9 .all .content .box .info h4:hover {
+  color: #6168FF;
+}
+
+.page10 .all .text {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+.page10 .all .text h1 {
+  font-size: 70px;
+  color: silver;
+  font-family: bold;
+  opacity: 0.25;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page10 .all .text h2 {
+  font-size: 16px;
+  color: #6168FF;
+  font-family: bold;
+}
+.page10 .all .text p {
+  font-size: 24px;
+  color: #333333;
+  font-family: semibold;
+  width: 25%;
+  margin: auto;
+}
+.page10 .all form {
+  background-color: #F4F9FF;
+  margin: 0 14rem 8rem;
+  padding: 2rem 2rem 4rem;
+  border-radius: 10px;
+}
+.page10 .all form input {
+  width: 100%;
+  font-size: 16px;
+  font-family: regular;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  outline-style: none;
+}
+.page10 .all form .letter {
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 2rem;
+  width: 100%;
+  font-family: regular;
+  outline-style: none;
+}
+.page10 .all form button {
+  color: white;
+  padding: 10px 14px;
+  background-color: #6168FF;
+  width: 27.5%;
+  margin: auto;
+  border: 1px solid #6168FF;
+  border-radius: 5px;
+  transition: 0.5s;
+  font-family: semibold;
+}
+.page10 .all form button:hover {
+  background-color: #262626;
+  border-color: #262626;
+}
+
+footer {
+  background-color: #00102A;
+  -webkit-clip-path: polygon(67% 0, 100% 0, 100% 100%, 0 100%, 0 29%);
+          clip-path: polygon(67% 0, 100% 0, 100% 100%, 0 100%, 0 29%);
+  padding: 10rem 0;
+  position: relative;
+}
+footer .all .left .logo {
+  width: 60%;
+  margin-bottom: 1rem;
+}
+footer .all .left .logo img {
+  width: 100%;
+}
+footer .all .left p {
+  color: white;
+  font-size: 16px;
+}
+footer .all .left p span {
+  font-family: semibold;
+  margin-left: 0.5rem;
+}
+footer .all .middleleft h1, footer .all .middleright h1 {
+  color: white;
+  font-size: 22px;
+  font-family: semibold;
+  margin-bottom: 1.2rem;
+}
+footer .all .middleleft a, footer .all .middleright a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: regular;
+  display: block;
+  margin: 0.4rem 0;
+  transition: 0.5s;
+}
+footer .all .middleleft a:hover, footer .all .middleright a:hover {
+  color: #6168FF;
+}
+footer .all .right h1 {
+  font-size: 17px;
+  font-family: bold;
+  color: white;
+}
+footer .all .right p {
+  font-size: 15px;
+  color: white;
+  font-family: semibold;
+}
+footer .all .right input {
+  width: 100%;
+  padding: 0.7rem 0.5rem;
+  font-size: 15px;
+  font-family: regular;
+  border: none;
+  border-radius: 5px;
+  outline-style: none;
+  margin-bottom: 0.8rem;
+}
+footer .all .right button {
+  color: white;
+  font-size: 14px;
+  font-family: bold;
+  padding: 14px 28px;
+  background-color: #6168FF;
+  border: 1px solid #6168FF;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+footer .all .right button:hover {
+  background-color: white;
+  color: #262626;
+  border: 1px solid white;
+}
+footer hr {
+  width: 85%;
+  color: white;
+  margin: 1rem auto 0;
+}
+footer .theend {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer .theend p {
+  color: white;
+  font-size: 16px;
+  font-family: bold;
+}
+footer .theend .icons {
+  text-align: center;
+}
+footer .theend .icons i {
+  color: #6168FF;
+  font-size: 18px;
+  margin: 0 0.5rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+footer .theend .icons i:hover {
+  color: white;
+}
+
+@media (max-width: 576px) {
+  header .banner .logo {
+    width: 30%;
+  }
+  header .mainheader .all .logo {
+    width: 30%;
+  }
+  header .mainheader .all nav a {
+    display: none;
+  }
+  header .mainheader .all #hiddenicon {
+    display: block;
+    font-size: 24px;
+    color: #6168FF;
+    cursor: pointer;
+  }
+  .page1 #first, .page1 #second, .page1 #third {
+    display: none;
+  }
+  .page1 .info p {
+    font-size: 20px;
+  }
+  .page1 .info h1 {
+    font-size: 40px;
+    width: 80%;
+  }
+  .page3 #left, .page3 #right {
+    display: none;
+  }
+  .page3 .all .content .displaynone {
+    display: none;
+  }
+  .page7 {
+    padding: 5rem 3rem;
+  }
+  .page7 .all .no {
+    display: none;
+  }
+  .page8 .all .content .no {
+    display: none;
+  }
+  .page8 .all .direction {
+    display: none;
+  }
+  .page10 .all .text p {
+    font-size: 24px;
+    width: 60%;
+  }
+  .page10 .all form {
+    margin: 0 0.5rem 4rem;
+  }
+  .page10 .all form button {
+    width: 41%;
+  }
+  footer {
+    -webkit-clip-path: polygon(77% 0, 100% 0, 100% 100%, 0 100%, 0 11%);
+            clip-path: polygon(77% 0, 100% 0, 100% 100%, 0 100%, 0 11%);
+  }
+  footer .all .left .logo {
+    width: 30%;
+  }
+  footer .theend {
+    top: 92%;
+    width: 100%;
+  }
+  footer .theend p {
+    font-size: 16px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
